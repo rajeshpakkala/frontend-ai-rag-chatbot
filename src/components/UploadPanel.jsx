@@ -44,11 +44,11 @@ export default function UploadPanel() {
 
   const handleUpload = async () => {
     if (!username.trim() || !password.trim()) {
-      setStatus({ type: 'error', message: 'Please enter your username and password.' })
+      setStatus({ type: 'error', message: 'Please enter your username and password..' })
       return
     }
     if (files.length === 0) {
-      setStatus({ type: 'error', message: 'Please select at least one file to upload.' })
+      setStatus({ type: 'error', message: 'Please select at least one file to upload..' })
       return
     }
 
