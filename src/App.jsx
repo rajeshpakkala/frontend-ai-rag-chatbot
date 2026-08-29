@@ -17,7 +17,7 @@ export default function App() {
           </p>
         </div>
         <div className="text-xs text-slate-500 bg-slate-800 px-3 py-1 rounded-full">
-          Backend: localhost:8080
+          Backend: {import.meta.env.VITE_API_BASE_URL || 'localhost:8080'}
         </div>
       </header>
 
