@@ -7,8 +7,9 @@ export default defineConfig({
     port: 3000,
     proxy: {
       '/chatbot': {
-        target: 'http://localhost:8080',
+        target: 'https://ai-rag-chatbot-ixdt.onrender.com',
         changeOrigin: true,
+        secure: true,
       },
     },
   },
